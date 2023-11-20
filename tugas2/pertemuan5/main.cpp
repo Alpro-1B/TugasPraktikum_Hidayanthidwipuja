@@ -11,14 +11,15 @@ int main()
     cout<<"Masukkan tinggi segitiga sama sisi:";
     // MEMASUKAN TINGGI SESUAI PERINTAH USER
     cin>>tinggi;
+    functionPertama(tinggi);
  return 0;
 }
-void functionKedua(int tinggi){
+void functionPertama(int tinggi){
     for(int a=1; a<=tinggi; a++){
         for(int j =1; j<=tinggi -a;j++){
             cout<<" ";
         }
-        for(int k=1; k<=2*a-1;k++){
+        for(int k=1; k<=a;k++){
             cout<<"*";
         }
         cout<<endl;
